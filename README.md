@@ -4,4 +4,4 @@ The year is 2037, the year of John Titor.
 
 There are no moere schnabeltiers.
 
-They are gone. 
+They are gone...

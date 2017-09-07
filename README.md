@@ -1,7 +1,7 @@
-This is an exciting repository of findings pertaining to bird wings and the bills of the great schnabeltier.
-
-The year is 2037, the year of John Titor.
-
-There are no moere schnabeltiers.
+There are no more schnabeltiers.
 
 They are gone...
+
+But really, what is this?
+An account of the future, as told from timeline traveler, Ms. Titor.
+A real, living human from the year 2037.

@@ -1,0 +1,24 @@
+{
+  "name": "testbed",
+  "version": "1.0.0",
+  "description": "There are no more schnabeltiers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladyalice/testbed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ladyalice/testbed/issues"
+  },
+  "homepage": "https://github.com/ladyalice/testbed#readme",
+  "dependencies": {
+    "install": "^0.10.1",
+    "jquery": "^3.2.1",
+    "npm": "^5.4.1"
+  }
+}

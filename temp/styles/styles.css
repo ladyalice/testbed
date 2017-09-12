@@ -1,0 +1,13 @@
+p {
+	color: #2f5572;
+	font-family: sans-serif, helvetica;
+	padding: 25px;
+	margin: 10px;
+	-webkit-columns: 300px 2;
+	        columns: 300px 2; 
+}
+
+.box a {
+		display: block;
+		padding: 10px;
+	}

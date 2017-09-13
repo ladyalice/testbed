@@ -1,0 +1,18 @@
+.hero-big {
+	position: relative;
+}
+
+.hero-big__text-content {
+	position: absolute;
+	top: 50%;
+	/*transform: translateY(-50%);*/
+	left: 0;
+	width: 100%;
+	text-align: center;
+
+}
+
+.hero-big h1 {
+font-weight: 300;
+
+}

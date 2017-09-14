@@ -1,18 +1,71 @@
+/* 
+Here we are creating a flat-specificity tree - however, 
+our post CSS temp output creates descendent selectors.
+It works in the browser, however it's against BEM philosophy. 
+To NOT do that, we can use an "&" ampersand instead of the full name. 
+In this version, you can just typ eout the full name and it won't make descendant selectors,
+but the & is a shortcut of sorts for nesting
+*/
+
 .hero-big {
 	position: relative;
-}
 
-.hero-big__text-content {
+
+	&__text-content {
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	/*transform: translateY(-50%);*/
 	left: 0;
 	width: 100%;
 	text-align: center;
 
+	}
+
+	&__title {
+	font-weight: 300;
+	color: white;
+	font-size: 3.5rem;
+	margin: 0;
+	}
+
+	&__subtitle {
+	font-weight: 300;
+	color: white;
+	font-size: 2.0rem;
+	margin: 0;
+	}
+
+	&__description {
+	font-weight: 200;
+	color: #D3FDF5;
+	font-size: 1.0rem;
+	margin: 0;
+	}
 }
 
-.hero-big h1 {
-font-weight: 300;
+/* 
+B - Block
+E - Element
+M - Modifier
+
+Although it's funky, it makes everything a one-to-one on targeting,
+so you do't inherit any funky parent class styles
+You're essentially removing the C in CSS. 
+Not sure if I'm a fan, but the clarity when 
+referencing back, say years later, would be nice..
+You can create single-responsibility blocks (eg: a div column block)
+"But what about HTML semantics?!" you may be asking..
+"Class names cannot be unsemantic" - Nicholas Gallagher
+"Class names should communicate useful information to developers."
+
+if those blocks above were written in an unested way, with their full names they'd be like so:
+
+.big-hero__subtitle {
+	font-weight: 300;
+	color: white;
+	font-size: 2.0rem;
 
 }
+*/
+
+

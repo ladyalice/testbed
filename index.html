@@ -6,12 +6,24 @@
 </head>
 <body>
 	<div class="hero-big">
-		<img src="assets/images/vapor2.jpg" alt="No one remembers you">
+	<!--for art direction / cropping use the picture tags-->
+		<picture>
+		<!--Format below is if you want an High DPI option -->
+			<source srcset="assets/images/vapor--hd.jpg" media="(min-width: 1380px)">
+			<source srcset="assets/images/vapor--medium.jpg" media="(min-width: 990px)">
+			<source srcset="assets/images/vapor--medium.jpg" media="(min-width: 640px)">
+			<img src="assets/images/vapor--hd.jpg" alt="Aesthetic landscape">
+		</picture> 
+
+	<!-- For faster load times / letting the browser pick, use this. This looks just at the size you give it. Not my favorite as I can't control this as easily-->
+		<!--<img srcset="assets/images/vapor2.jpg 4000w, assets/images/vapor.jpg 1200w">-->
+		
 			<div class="hero-big__text-content">
 				<h1 class="hero-big__title" >You make $500,000 / year.</h1>
 			
 				<h2 class="hero-big__subtitle">Your problems haven't gone away.</h2>
 				<p class="hero-big__description"> Your biggest regret is even caring.</p>
+				<a href="#" class="btn">Invest Monies</a>
 			</div>
 		
 
@@ -20,12 +32,20 @@
 
 
 The minds of the people have changed for the worse.
+ 
 
 
 <h2>This is the account of Ms Titor.</h2>
 <p>Greetings   </p>
 
+<a href="#" class="btn btn--orange btn --large">Go back to the year 2017</a>
+<br>
+<picture>
+	<source srcset="assets/images/boat.gif" media="(min-width: 700px)">
+	<source srcset="assets/images/kirokaze.gif" media="(min-width: 1200)">
+	<img src="assets/images/kirokaze.gif">
 
+</picture>
 
 </body>
 </html>

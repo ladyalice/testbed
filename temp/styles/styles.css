@@ -486,22 +486,36 @@ but the & is a shortcut of sorts for nesting
 .hero-big__title {
 	font-weight: 300;
 	color: white;
-	font-size: 3.5rem;
+	font-size: 1.1rem;
 	margin: 0;
 	}
+
+@media (min-width: 530px){
+
+.hero-big__title {
+			font-size: 3.3rem
+	}
+		}
 
 .hero-big__subtitle {
 	font-weight: 300;
 	color: white;
-	font-size: 2.0rem;
+	font-size: 2.2rem;
 	margin: 0;
 	}
 
 .hero-big__description {
-	font-weight: 200;
-	color: #D3FDF5;
-	font-size: 1.0rem;
+	font-weight: 100;
+	color: white;
+	font-size: 1.875rem;
 	margin: 0;
+	/* black shadow 10% visible */
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, .2);
+	/*measurement of size of text (480px / 16px (default))*/
+	max-width: 30rem;
+	/*align to the center*/
+	margin-right: auto;
+	margin-left: auto;
 	}
 
 /* 
@@ -528,5 +542,24 @@ if those blocks above were written in an unested way, with their full names they
 
 }
 */
- 
+
+.btn {
+	background-color: #01cdfe;
+	color: #FFF;
+	text-decoration: none;
+	padding: .75rem 1.2rem;
+	display: inline-block;
+}
+
+.btn--orange {
+		background-color: #ff71ce;
+
+	}
+
+.btn--large {
+
+		font-size: 1.25rem;
+		/*vertical padding and then horizontal padding*/
+		padding: 1.1rem 1.9rem;
+	} 
  

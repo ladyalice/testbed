@@ -4,4 +4,15 @@
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+
+	&--medium{
+		max-width: 900;
+	}
+
+	/*Any wrapper nested in another wrapper should have no horizontal padding 
+	(so any images in multiple wrappers use the entire space)*/
+	.wrapper{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }

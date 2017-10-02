@@ -1,0 +1,49 @@
+.headline {
+	font-weight: 300;
+	font-size: 1.9rem;
+	font-color: $mainBlue;
+		@mixin atSmall {
+			font-size: 2.876rem;
+		}
+
+
+
+	&--centered {
+		text-align: center;
+	}
+
+	&--orange {
+		color: $mainYellow;
+	}
+
+	&--small {
+		/*eg: you're loking at a doc, and you see a height of 30 pt, 
+		the default is 16pts for a screen, so simply divide 30/16*/
+		font-size: 1.2rem;
+			@mixin atSmall {
+				font-size: 1.875rem;
+
+			}
+	}
+
+	&--narrow {
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&--light {
+		font-weight: 100;
+	}
+
+	&--b-margin-small {
+		/*em is nice as it's relative to the font size of the elemtn itself*/
+		margin-bottom: .5em;
+	}
+
+	
+	&--b-margin-large {
+		margin-bottom: 1.6em;
+	}
+
+}	

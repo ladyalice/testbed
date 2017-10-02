@@ -15,6 +15,7 @@ but the & is a shortcut of sorts for nesting
 			/*otherwise, default for images is inline, as it's trying to leave room for type*/
 		display: block;
 	}
+	
 	&__text-content {
 	position: absolute;
 	top: 55%;
@@ -22,17 +23,36 @@ but the & is a shortcut of sorts for nesting
 	left: 0;
 	width: 100%;
 	text-align: center;
-
 	}
 
 	&__title {
 	font-weight: 300;
 	color: white;
 	margin: 0;
-	font-size: 1.1rem;
-	
+	font-size: 1.8rem;
+	 	
 	 	@mixin atSmall {
-		font-size: 1.8rem;
+		font-size: 2rem;
+		}
+		@mixin atMedium {
+		font-size: 3rem;
+		}
+		@mixin atLarge {
+		font-size: 4rem;
+		}
+
+	}
+	
+	/*default here is for screens <530px width*/
+	&__subtitle {
+	font-weight: 300;
+	color: white;
+	font-size: 1.4rem;
+	margin: 0;
+		
+		/*screen below has to be 530px wide at least */
+		@mixin atSmall {
+		font-size: 1.4rem;
 		}
 		@mixin atMedium {
 		font-size: 2rem;
@@ -40,31 +60,12 @@ but the & is a shortcut of sorts for nesting
 		@mixin atLarge {
 		font-size: 3rem;
 		}
-
-	}
-	/*default here is for screens <530px width*/
-	&__subtitle {
-	font-weight: 300;
-	color: white;
-
-	font-size: 1.1rem;
-	margin: 0;
-		/*screen below has to be 530px wide at least */
-		@mixin atSmall {
-		font-size: 1.4rem;
-		}
-		@mixin atMedium {
-		font-size: 1.5rem;
-		}
-		@mixin atLarge {
-		font-size: 2.2rem;
-		}
 	}
 
 	&__description {
 	font-weight: 100;
 	color: white;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	margin: 0;
 	/* black shadow 10% visible */
 	text-shadow: 2px 2px 0 rgba(0, 0, 0, .2);
@@ -74,15 +75,15 @@ but the & is a shortcut of sorts for nesting
 	margin-right: auto;
 	margin-left: auto;
 
-	@mixin atSmall {
-		font-size: 1.1rem;
-	}
-	@mixin atMedium {
-		font-size: 1.3rem;
-	}
-	@mixin atLarge {
+		@mixin atSmall {
+		font-size: 1.2rem;
+		}
+		@mixin atMedium {
 		font-size: 1.5rem;
-	}
+		}
+		@mixin atLarge {
+		font-size: 2rem;
+		}
 	}
 }
 
